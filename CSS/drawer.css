@@ -23,7 +23,29 @@
     padding: 10px 20px;
     color:white;
 }
+.smenu{
+    border-top:#2f3640 3px solid;
+    background: #353b48;
+}
 .smenu a{
     display: block;
-    max-height: 0px;
+    background:#353b48;
+    color:white;
+    padding:5px 20px;
+    position: relative;
 }
+.smenu a:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #487eb0;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .smenu a:hover:before{
+    opacity: 1;
+  }
+
